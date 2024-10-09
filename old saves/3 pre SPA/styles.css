@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    margin-top: 0;
+    font-size: 22px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  h4 {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  
+  h5 {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  
+  h6 {
+    margin-top: 0;
+    font-size: 12px;
+  }
+  
+  code {
+    font-size: 1.2em;
+  }
+  
+  ul {
+    padding-inline-start: 20px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-image: linear-gradient(rgba(20, 42, 114, 0.95), rgba(30, 59, 156, 0.5)), url('../public/pattern_2.png');
+    /*background-image: linear-gradient(rgb(30, 59, 156), rgba(30, 59, 156, 0.5)), url('../public/pattern_2.png');*/
+    background-repeat: repeat;
+    background-size: auto;
+    animation: scrollWBBackground 30s linear infinite;
+  }
+  
+  .inputArea .enter {
+    background: #ffffff00;
+    color:#ffffff;
+    border: 1vh solid #999;
+    float: left;
+    font-size: 1.4vw;
+    line-height: 0vh;
+    height: 3vh;
+    padding: 1.5vh 1.5vh;
+    text-align: center;
+    border: solid;
+    border-color: white;
+  }
+  
+
+  .inputArea .enter:hover {
+    background: #000000;
+  }
+
+  .inputArea {
+    /*background: #383e97;*/
+    background: #1a1d47;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vh 2vw;
+    /*margin-top: 5vh;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    position: fixed;
+    /*top: -15vh;*/
+    /*top: 0vh;*/
+    top: 40vh;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: top 0.5s ease;
+    border: solid 1vh;
+    border-color: white;
+    border-radius: 1vh;
+    /*border-radius: 8vh;*/
+  }
+
+  .inputArea.deployed {
+    top: 5vh;
+  }
+
+  .inputArea .main {
+    display: flex;
+    flex-direction:row;
+  }
+
+  /*
+  .inputArea:hover {
+    top: 2vh;
+  }
+  */
+  
+  .inputArea input {
+    height: 4vh;
+    margin-right: 1vw;
+    padding: 0 1vw;
+    font-weight: normal;
+    font-size: 1.4vw;
+    color:#707070
+  }
+
+  .inputArea .weatherTitle {
+    color: white;
+    font-size: 2vw;
+    width: 21vw;
+  }
+
+  .inputArea .downArrow {
+    color: gray;
+    margin-top: auto;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .infoArea {
+    background-image: url('../public/pattern_dot_grid.png');
+    background-repeat: repeat;
+    border: solid 1vh;
+    border-color: white;
+    margin-top: 32vh;
+    padding: 2vh;
+    border-radius: 2vh;
+    align-self: center;
+    /*background: #3038af;*/
+  }
+
+  .infoArea .cityAndState {
+    background: rgb(0, 153, 255);
+    /*margin-top: 30vh;*/
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1vw;
+    padding: 2vh 2vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .infoArea .cityAndState .text {
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+  }
+
+  .infoArea .condition {
+    display: inline-block;
+    margin: 1vh;
+    padding: 1vh 1vw;
+    /*height: 20vh;*/
+    background: rgb(50, 173, 255);
+    color: white;
+  }
+
+  .infoArea .condition .titleText{
+    font-size: 2vw;
+  }
+
+  .infoArea .condition .valueText{
+    font-size: 4vw;
+  }
+
+  .infoArea .temp {
+    display: inline-block;
+    margin: 1vh;
+    padding: 1vh 1vw;
+    background: rgb(50, 173, 255);
+    color: white;
+  }
+
+  .infoArea .temp .titleText{
+    font-size: 2vw;
+  }
+
+  .infoArea .temp .valueText{
+    font-size: 4vw;
+  }
+
+  .infoArea .feelsLike {
+    display: inline-block;
+    margin: 1vh;
+    padding: 1vh 1vw;
+    background: rgb(50, 173, 255);
+    color: white;
+  }
+
+  .infoArea .feelsLike .titleText{
+    font-size: 2vw;
+  }
+
+  .infoArea .feelsLike .valueText{
+    font-size: 4vw;
+  }
+
+  .infoArea .humidity {
+    display: inline-block;
+    margin: 1vh;
+    padding: 1vh 1vw;
+    background: rgb(50, 173, 255);
+    color: white;
+  }
+
+  .infoArea .humidity .titleText{
+    font-size: 2vw;
+  }
+
+  .infoArea .humidity .valueText{
+    font-size: 4vw;
+  }
+
+  .infoArea .windSpeed {
+    display: inline-block;
+    margin: 1vh;
+    padding: 1vh 1vw;
+    background: rgb(50, 173, 255);
+    color: white;
+  }
+
+  .infoArea .windSpeed .titleText{
+    font-size: 2vw;
+  }
+
+  .infoArea .windSpeed .valueText{
+    font-size: 4vw;
+  }
+
+  .infoArea .uv {
+    display: inline-block;
+    margin: 1vh;
+    padding: 1vh 1vw;
+    background: rgb(50, 173, 255);
+    color: white;
+  }
+
+  .infoArea .uv .titleText{
+    font-size: 2vw;
+  }
+
+  .infoArea .uv .valueText{
+    font-size: 4vw;
+  }
+
+  @keyframes scrollWBBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 100%;}
+  }
+
+  .weatherBox {
+    /*background-color:#ff0000;*/
+    /*
+    background-image: linear-gradient(rgb(34, 38, 94), rgba(34, 38, 94, 0.5)), url('../public/pattern_2.png');
+    background-repeat: repeat;
+    background-size: auto;
+    animation: scrollWBBackground 30s linear infinite;
+    */
+    padding: 1vw;
+    /*
+    width: calc(100vw - 10vh);
+    height: calc(100vh - 10vh);
+    */
+    max-width: 100vw;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .menuArea {
+    height: 8vh;
+    width: 8vh;
+    background: rgb(29, 29, 29);
+    margin-left: auto;
+    border-radius: 2vh;
+    border: solid 0.5vh;
+    border-color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+    transition: height 0.5s ease;
+  }
+
+  .menuArea.deployed {
+    height: 32vh;
+    transition: height 0.5s ease;
+  }
+
+  .menuButton {
+    height: 7vh;
+    width: 7vh;
+    background: rgba(119, 119, 119, 0);
+    border-radius: 2vh;
+    border: none;
+    /*
+    color: white;
+    font-size: 8vh;
+    font-weight: bold;
+    line-height: 1.5vh;
+    text-align: center;
+    */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0%;
+  }
+
+  .menuButton .line {
+    width: auto;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    margin-bottom: 0.5vh;
+    margin-top: 0.5vh;
+    height: 1vh;
+    background-color: white;
+    border-radius: 0.25vh;
+  }
+
+  .menuBox {
+    height: 16vh;
+    width: 8vh;
+    background: rgba(29, 29, 29, 0.185);
+    margin-left: auto;
+  }
